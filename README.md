@@ -1,1 +1,1 @@
-# _frontendMentor-results-summary-component
+# Results Summary Component
