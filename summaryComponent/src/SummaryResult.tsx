@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Button } from './components/Button/Button';
+import { useState } from 'react'
+
 import { SummaryList } from './components/SummaryList/SummaryList';
+import { SummaryTopInfo } from './components/SummaryTopInfo/SummaryTopInfo';
 
 
 
@@ -12,9 +11,11 @@ function SummaryResult() {
   
   return (
     <>
-      
-      <Button label="Continue" />
-      <SummaryList />
+      <section className="summary">
+        <SummaryTopInfo total={76} />
+        <SummaryList />
+       
+      </section>
       
     </>
   )

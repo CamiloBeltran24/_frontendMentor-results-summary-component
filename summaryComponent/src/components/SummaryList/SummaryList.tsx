@@ -1,14 +1,19 @@
 import { SummaryItem } from '../SummaryItem/SummaryItem';
-import React from 'react'
-
+import './SummaryList.css';
+import { Button } from '../Button/Button';
 
 interface Item {
-    name: String,
+    name: string,
     quantity: number,
+    icon: string,
 }
 
-let  items : Item[] = [];
-
+let  items : Item[] = [
+  { name: 'Reaction', quantity: 80, icon: '/src/assets/svg/icon-reaction.svg' },
+  { name: 'Memory', quantity: 92, icon: '/src/assets/svg/icon-memory.svg' },
+  { name: 'Verbal', quantity:61, icon: '/src/assets/svg/icon-verbal.svg' },
+  { name: 'Visual', quantity: 73, icon: '/src/assets/svg/icon-visual.svg' }
+];
 
 
 export const SummaryList = () => {
@@ -16,7 +21,15 @@ export const SummaryList = () => {
 
     <>
         <section className="summary__list">
-            <SummaryItem quantity={80} />
+          <h2 className="text-preset-5__bold">Summary</h2>
+          {
+            items.map( item => (
+              <SummaryItem quantity={item.quantity} name={item.name} icon={item.icon} />
+            ))
+          }
+
+           <Button label="Continue" />
+            
         </section>
     </>
     

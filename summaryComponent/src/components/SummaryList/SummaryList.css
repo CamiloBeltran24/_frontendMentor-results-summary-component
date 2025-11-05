@@ -1,0 +1,19 @@
+.summary__list {
+    /* margin-bottom: 24px; */
+    padding: 0 30px;
+}
+.summary__list h2 {
+    margin: 24px 0;
+}
+
+ @media screen and (min-width: 1024px) {
+  .summary__list  {
+    width:  50%;
+    max-width: 368px;
+    padding: 44.5px 40px;
+  }
+
+  .summary__list h2 {
+    margin-top: 0;
+  }
+}

@@ -5,7 +5,7 @@ interface buttonProps {
 export const Button = ({ label } : buttonProps) => {
     return(
         <>
-            <button>{ label }</button>
+            <button className="text-preset-5__bold" type="button">{ label }</button>
         </>
     )
 }
