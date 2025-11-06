@@ -9,10 +9,10 @@ interface Item {
 }
 
 let  items : Item[] = [
-  { name: 'Reaction', quantity: 80, icon: '/src/assets/svg/icon-reaction.svg' },
-  { name: 'Memory', quantity: 92, icon: '/src/assets/svg/icon-memory.svg' },
-  { name: 'Verbal', quantity:61, icon: '/src/assets/svg/icon-verbal.svg' },
-  { name: 'Visual', quantity: 73, icon: '/src/assets/svg/icon-visual.svg' }
+  { name: 'Reaction', quantity: 80, icon: '/public/assets/svg/icon-reaction.svg' },
+  { name: 'Memory', quantity: 92, icon: '/public/assets/svg/icon-memory.svg' },
+  { name: 'Verbal', quantity:61, icon: '/public/assets/svg/icon-verbal.svg' },
+  { name: 'Visual', quantity: 73, icon: '/public/assets/svg/icon-visual.svg' }
 ];
 
 
