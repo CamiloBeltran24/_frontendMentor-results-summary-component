@@ -48,3 +48,12 @@
 .summary__item span.amount {
     opacity: 0.5;
 }
+
+@media screen and (min-width: 768px) {
+    .summary__item h3, .summary__item span {
+        font-size: 1.8rem;
+    }
+    .summary__item.visual {
+        margin-bottom: 32px;
+    }
+}

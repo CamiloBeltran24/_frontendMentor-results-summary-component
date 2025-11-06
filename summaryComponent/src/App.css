@@ -42,9 +42,7 @@ body {
 #root{ 
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 button {
@@ -122,9 +120,14 @@ button:hover {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  #root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .summary {
-    max-width: 686px;
+    /* max-width: 686px; */
     flex-direction: row;
     flex-wrap: nowrap;
     padding-bottom: 0;
