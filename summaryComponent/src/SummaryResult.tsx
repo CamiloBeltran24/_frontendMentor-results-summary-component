@@ -1,6 +1,4 @@
 import './App.css'
-import { useState } from 'react'
-
 import { SummaryList } from './components/SummaryList/SummaryList';
 import { SummaryTopInfo } from './components/SummaryTopInfo/SummaryTopInfo';
 
